@@ -1,0 +1,17 @@
+
+.button-help{
+    padding: 7px;
+    border: 0;
+    /* width: 80px; */
+    font-size: 30px;
+    color: rgba(9, 35, 151, 0.854);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+
+.button-help:hover{
+    background-color: transparent;
+}
