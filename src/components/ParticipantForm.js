@@ -71,7 +71,7 @@ const ParticipantForm = ({ onSaveParticipant }) => {
                 <div className="participant-form-content">
                     <div className="area-button-show-hidden-add">
                         <button onClick={handleToggleParticipants} className="button-show-hidden-participant">
-                            {showParticipants ? 'Mostrar Participantes' : 'Mostrar Participantes'}
+                            {showParticipants ? 'Ocultar Particioantes' : 'Mostrar Participantes'}
                         </button>
                         <button onClick={handleAddParticipant} className="button-add-save-participant">
                             {editingParticipantId !== null ? 'Salvar Edição' : 'Adicionar Participante'}
