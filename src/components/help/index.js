@@ -37,7 +37,7 @@ export const Help = () => {
         <>
             <button onClick={handleHelp} className="button-help">
                 <IconBxsHelpCircle style={{ marginTop: "10px" }} />
-                <p style={{ fontSize: "12px", marginTop: "-8px", color: "#333" }}>Ajuda</p>
+                <p style={{ fontSize: "12px", marginTop: "-8px", color: "#fff",letterSpacing:"1px" }}>Ajuda</p>
             </button>
         </>
     );
