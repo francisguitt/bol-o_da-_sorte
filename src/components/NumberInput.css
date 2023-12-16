@@ -25,7 +25,7 @@
     box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 .number-input input::placeholder{
-    font-size: 18.99px;
+    font-size: 16.99px;
     text-shadow: 2px 2px 5px #ddd;
     font-family: 'Roboto',sans-serif;
 }
