@@ -159,20 +159,25 @@ const App = () => {
           <h2>Resultado</h2>
           {!showNumbers && <>
             <table className="combinations-table">
-              <thead>
-                <tr >
-                  <th>Qt: Bilhetes</th>
-                  <th>Números do Bilhete</th>
-                </tr>
-              </thead>
-              <tbody className='tbody-area'>
-                {combinations.map((combination, index) => (
-                  <tr key={index} className={(index % 2 === 0) ? 'even-row' : 'odd-row'}>
-                    <td><span>{index + 1}</span></td>
-                    <td><span className='td-combination'>{combination.join(', ')}</span></td>
+              <div className="combination-table-area">
+                <thead>
+                  <tr>
+                    <th>Qt:</th>
+                    <th>Números do Bilhete</th>
                   </tr>
-                ))}
-              </tbody>
+                </thead>
+                <div className="tacle-colum-rows-area">
+                  {combinations.map((combination, index) => (
+                    <div key={index} className="table-colum-rows-area-content">
+                      <tr className={(index % 2 === 0) ? 'even-row' : 'odd-row'}>
+                        <td ><span>{index + 1}</span></td>
+                        <td><span className='td-combination'>{combination.join(', ')}</span></td>
+                      </tr>
+                    </div>
+                  ))}
+                </div>
+
+              </div>
             </table>
 
             <button onClick={handleGenerateLotteryTickets} className='generation-tickets-button'><p>Gerar Bilhetes</p></button>
